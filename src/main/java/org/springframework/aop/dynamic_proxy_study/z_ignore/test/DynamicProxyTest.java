@@ -1,11 +1,11 @@
-package org.springframework.aop.dynamic_proxy_study.test;
+package org.springframework.aop.dynamic_proxy_study.z_ignore.test;
 
 import org.junit.Test;
-import org.springframework.aop.dynamic_proxy_study.Advisor.DaoTransaction;
-import org.springframework.aop.dynamic_proxy_study.POJO.Student;
-import org.springframework.aop.dynamic_proxy_study.Service.IStudentService;
-import org.springframework.aop.dynamic_proxy_study.Service.StudentServiceImpl;
-import org.springframework.aop.dynamic_proxy_study.Service.TransactionHandler;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Advisor.DaoTransaction;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.POJO.Student;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Service.IStudentService;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Service.StudentServiceImpl;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Service.TransactionHandler;
 import sun.misc.ProxyGenerator;
 
 import java.io.File;

@@ -1,6 +1,6 @@
-package org.springframework.aop.dynamic_proxy_study.Service;
+package org.springframework.aop.dynamic_proxy_study.z_ignore.Service;
 
-import org.springframework.aop.dynamic_proxy_study.Advisor.DaoTransaction;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Advisor.DaoTransaction;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;

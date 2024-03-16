@@ -1,6 +1,7 @@
 package org.springframework.aop;
 
 import org.aopalliance.intercept.MethodInterceptor;
+import org.springframework.aop.dynamic_proxy_study.jdk_proxy.PrintFuncImpl;
 import org.springframework.aop.framework.AdvisorChainFactory;
 import org.springframework.aop.framework.DefaultAdvisorChainFactory;
 
@@ -20,6 +21,7 @@ public class AdvisedSupport {
 	private boolean proxyTargetClass = true;
 
 	private TargetSource targetSource;
+	private Object target;
 
 
 	private MethodMatcher methodMatcher;
@@ -77,5 +79,10 @@ public class AdvisedSupport {
 			this.methodCache.put(cacheKey, cached);
 		}
 		return cached;
+	}
+
+	public void setTarget(Object target) {
+		this.target = target;
+		this.targetSource = new TargetSource(target);
 	}
 }

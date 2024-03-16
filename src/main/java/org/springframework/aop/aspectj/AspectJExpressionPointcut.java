@@ -16,6 +16,7 @@ import java.util.Set;
  * @date 2020/12/5
  */
 public class AspectJExpressionPointcut implements Pointcut, ClassFilter, MethodMatcher {
+	private String express;
 
 	private static final Set<PointcutPrimitive> SUPPORTED_PRIMITIVES = new HashSet<PointcutPrimitive>();
 
@@ -48,5 +49,9 @@ public class AspectJExpressionPointcut implements Pointcut, ClassFilter, MethodM
 	@Override
 	public MethodMatcher getMethodMatcher() {
 		return this;
+	}
+
+	public void setExpression(String s) {
+		express = s;
 	}
 }

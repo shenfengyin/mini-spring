@@ -1,6 +1,7 @@
 package org.springframework.aop.aspectj;
 
 import org.aopalliance.aop.Advice;
+import org.aopalliance.intercept.MethodInterceptor;
 import org.springframework.aop.Pointcut;
 import org.springframework.aop.PointcutAdvisor;
 
@@ -18,7 +19,12 @@ public class AspectJExpressionPointcutAdvisor implements PointcutAdvisor {
 
 	private String expression;
 
-	public void setExpression(String expression) {
+    public AspectJExpressionPointcutAdvisor(AspectJExpressionPointcut pointcut, MethodInterceptor advice) {
+		this.pointcut = pointcut;
+		this.advice = advice;
+    }
+
+    public void setExpression(String expression) {
 		this.expression = expression;
 	}
 

@@ -1,4 +1,4 @@
-package org.springframework.aop.dynamic_proxy_study.POJO;
+package org.springframework.aop.dynamic_proxy_study.z_ignore.POJO;
 
 import lombok.Data;
 

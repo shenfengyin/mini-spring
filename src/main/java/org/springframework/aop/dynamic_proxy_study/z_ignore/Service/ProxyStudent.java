@@ -1,7 +1,7 @@
-package org.springframework.aop.dynamic_proxy_study.Service;
+package org.springframework.aop.dynamic_proxy_study.z_ignore.Service;
 
-import org.springframework.aop.dynamic_proxy_study.Advisor.DaoTransaction;
-import org.springframework.aop.dynamic_proxy_study.POJO.Student;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.Advisor.DaoTransaction;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.POJO.Student;
 
 public class ProxyStudent implements IStudentService {
     //目标类对象

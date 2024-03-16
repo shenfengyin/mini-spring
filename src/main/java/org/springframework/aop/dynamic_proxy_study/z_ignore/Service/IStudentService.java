@@ -1,6 +1,6 @@
-package org.springframework.aop.dynamic_proxy_study.Service;
+package org.springframework.aop.dynamic_proxy_study.z_ignore.Service;
 
-import org.springframework.aop.dynamic_proxy_study.POJO.Student;
+import org.springframework.aop.dynamic_proxy_study.z_ignore.POJO.Student;
 
 /**
  * @Author:sfy
